@@ -20,3 +20,5 @@ Este projeto foi desenvolvido como parte integrante do aprendizado em Linguagem 
 Agradecemos por conferir este projeto!
 
 #### Thauan Rodrigues
+#### Aleysson Pereira Garcia da Silva
+#### Raphael Albuquerque
