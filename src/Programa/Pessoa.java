@@ -10,16 +10,14 @@ public abstract class Pessoa {
 
     private int numeroPessoa;
     private String name;
-    private String cpfCnpj;
     private String email;
     private Date accountCreationDate;
 
     public Pessoa() { }
 
-    public Pessoa(String name, String cpfCnpj, String email) {
+    public Pessoa(String name, String email) {
         this.numeroPessoa = Pessoa.counter;
         this.name = name;
-        this.cpfCnpj = cpfCnpj;
         this.email = email;
         this.accountCreationDate = new Date();
         Pessoa.counter += 1;
@@ -35,14 +33,6 @@ public abstract class Pessoa {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getCpfCnpj() {
-        return cpfCnpj;
-    }
-
-    public void setCpfCnpj(String cpfCnpj) {
-        this.cpfCnpj = cpfCnpj;
     }
 
     public String getEmail() {
@@ -63,7 +53,6 @@ public abstract class Pessoa {
     public String toString() {
         return  "\nTipo de Pessoa: " + getTipoPessoa() +
                 "\nName: " + this.getName() +
-                "\nCPF/CNPJ: " + this.getCpfCnpj() +
                 "\nEmail: " + this.getEmail() +
                 "\nAccount Creation Date: " + Utils.dateToString(this.getAccountCreationDate());
     }

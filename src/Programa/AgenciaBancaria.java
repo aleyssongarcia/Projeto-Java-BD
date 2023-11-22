@@ -25,7 +25,7 @@ public class AgenciaBancaria {
         System.out.println("|   Opção 4 - Transferir    |");
         System.out.println("|   Opção 5 - Listar        |");
         System.out.println("|   Opção 6 - Sair          |");
-         System.out.print("Digite a Opção: ");
+         System.out.print("\nDigite a Opção: ");
 
         int operacao = sc.nextInt();
         sc.nextLine();
@@ -63,7 +63,7 @@ public class AgenciaBancaria {
         System.out.print("\nTipo de Pessoa:" +
         "\n |   Opção 1 - Pessoa Fisica   |" +
         "\n |   Opção 2 - Pessoa Juridica |" +
-        "\n Digite: ");
+        "\n\n Digite: ");
         int tipoPessoa = sc.nextInt();
         sc.nextLine();
 
